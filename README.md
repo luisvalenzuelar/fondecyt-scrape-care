@@ -2,31 +2,21 @@
 
 ## From automation to home production via the gig economy: a novel gender-based análisis
 
-Software dedicado a la extracción de millones de datos históricos almacenados en Wayback Machine, sobre los trabajos solicitados y realizados en Estados Unidos durante la pandemia por medio del sitio web care.com.
+Software dedicado a la extracción de millones de datos históricos almacenados en Wayback Machine, sobre los trabajos solicitados y realizados en Estados Unidos por medio del sitio web care.com.
 
 ## Ejecución
 
 1. Clonar el repositorio.
 2. Copiar el archivo `.env.example` y pegarlo en la carpeta raiz con el nombre `.env`.
 3. Añadir el tipo de dato a extraer (offer o job) al lado del texto `DATA_TYPES_EXTRACTION=`. Ejemplo: `DATA_TYPES_EXTRACTION=offer`
-4. Ejecutar el programa de la forma que mejor convenga (Node o Docker). Dependiendo de la ejecución, la ruta del csv con la data extraída será distinto.
-
-### Node
+4. Ejecutar el programa con Node: 
 
 ```
 npm i
 npm run start
 ```
 
-output: `./dist/src/output`
-
-### Docker
-
-```
-docker compose up
-```
-
-output: `./output/`
+El resultado se almacena en output: `./dist/src/output`
 
 ## Configuración
 
